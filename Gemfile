@@ -1,12 +1,11 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 group :development do
-  gem "vagrant", github: 'mitchellh/vagrant'
+  gem 'vagrant', github: 'mitchellh/vagrant'
 end
 
 group :plugins do
-  gem "my-vagrant-plugin", path: "."
+  gemspec
 end
 
 # Specify your gem's dependencies in kleiber-plugin.gemspec
-gemspec
