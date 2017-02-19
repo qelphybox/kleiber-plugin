@@ -12,9 +12,9 @@ module VagrantPlugins
       Plugin provides super simple way to vagrant orchestration.
       DESC
 
-      command :symphony do
-        require_relative 'command/symphony'
-        Command::Symphony
+      command('symphony') do
+        require_relative 'command/root'
+        Command::Root
       end
     end
   end
